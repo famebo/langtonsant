@@ -39,7 +39,7 @@ export class SketchComponent implements OnInit, OnDestroy {
       this.dir = this.ANTLEFT;
       this.adim = 0;
       this.stop11000Adim = false;
-      p.stroke(p.color(30, 20, 30));
+      p.stroke(0);
       p.strokeWeight(1);
       this.gridWidth = p.width / 100;
       for (let cn = 0; cn < p.height; cn++) {
@@ -65,7 +65,7 @@ export class SketchComponent implements OnInit, OnDestroy {
         }
         p.fill(p.color(255, 165, 87));
         if (this.grid[this.x][this.y] === 1) {
-          p.fill(0);
+            p.fill(p.color(81, 21, 255));
         }
         p.rect(this.x, this.y, this.gridWidth, this.gridWidth);
         if (!this.stop11000Adim || this.adim !== 11000) {
