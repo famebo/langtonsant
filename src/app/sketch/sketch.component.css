@@ -1,0 +1,28 @@
+
+.bos-canvas{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+button{
+  margin-top:20px;
+  margin-right: 5px;
+}
+
+.adim-sayisi{
+  width:100%;
+  text-align: center;
+}
+
+.adim-sayisi h3{
+  margin:0;
+}
+
+.row strong{
+  line-height: 49px;
+  margin-left: 6px;
+}
+
+.source{
+  margin-top: 80px;
+}

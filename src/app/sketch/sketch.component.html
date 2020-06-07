@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3 source">
+      <div class="library-info" style="margin-top: 24px; margin-right:24px; border: 1px solid #c3c3c3;">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-info">
+            Kaynak kodları
+            <a href="https://github.com/famebo/langtonsant" target="_blank"> buradan </a>
+            inceleyebilirsiniz.
+          </li>
+          <li class="list-group-item list-group-item-success">
+            Daha detaylı bilgi için lütfen
+            <a href="https://www.fatihbostanci.com/post/langtons-ant-algoritmasi" target="_blank"> blogumu
+            </a>
+            ziyaret ediniz.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="adim-sayisi"><h3>Langton'ın Karıncası Algoitması</h3></div>
+      <div class="adim-sayisi"><strong>Adım Sayısı: </strong> <strong [innerHTML]="adim"> </strong></div>
+
+
+      <div class="bos-canvas" id="boscanvas">
+
+
+      </div>
+
+  </div>
+    <div class="col-2 source">
+
+      <button mat-raised-button color="primary" (click)="refresh()"> Sıfırdan Başlat</button>
+      <button mat-raised-button color="primary" (click)="start()"> Başlat</button>
+      <button mat-raised-button color="primary" (click)="updateSetting($event)">Durdur</button>
+      <button mat-raised-button color="primary" (click)="stop11000()">11.000 Adımda Durdur</button>
+
+      <div class="row">
+      <strong> Hız: </strong>
+      <mat-slider (change)="updateSetting($event)" step="1" min="1" max="100" [value]="speed"></mat-slider>
+      <strong> {{speed}} </strong>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
